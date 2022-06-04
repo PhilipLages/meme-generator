@@ -36,7 +36,6 @@ const water = document.getElementById('water');
 water.addEventListener('click', function() {
   const memeImageContainer = document.getElementById('meme-image-container');
   memeImageContainer.style.border = ' ';
-
   memeImageContainer.style.border = '5px double rgb(0, 0, 255)';
 });
 
@@ -49,10 +48,7 @@ earth.addEventListener('click', function() {
 const memes = document.getElementsByClassName('meme');
 
 function changeMemeImage(e){
-  memeInsert.src = URL.createObjectURL(e.target.files[0]);
-  memeInsert.onload = function() {
-    URL.revokeObjectURL(memeInsert.src);
-  }
+  memeImage.src = e.target.src;
 }
 
 function addMemesEvents() {
