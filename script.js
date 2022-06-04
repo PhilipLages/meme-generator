@@ -26,4 +26,24 @@ memeInsert.addEventListener('change', function() {
     memeImage.style.backgroundImage = `url(${selectedImage})`;
   });
   reader.readAsDataURL(this.files[0]);
-})
+});
+
+const fire = document.getElementById('fire');
+fire.addEventListener('click', function() {
+  const memeImageContainer = document.getElementById('meme-image-container');
+  memeImageContainer.style.border = '3px dashed rgb(255, 0, 0)';
+});
+
+const water = document.getElementById('water');
+water.addEventListener('click', function() {
+  const memeImageContainer = document.getElementById('meme-image-container');
+  memeImageContainer.style.border = ' ';
+  
+  memeImageContainer.style.border = '5px double rgb(0, 0, 255)';
+});
+
+const earth = document.getElementById('earth');
+earth.addEventListener('click', function() {
+  const memeImageContainer = document.getElementById('meme-image-container');
+  memeImageContainer.style.border = '6px groove rgb(0, 128, 0)';
+});

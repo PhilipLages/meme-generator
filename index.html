@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Meme Generator</title>
 </head>
@@ -18,9 +20,14 @@
         <section id="meme-image"></section>        
       </section>
       <section class="container">
-        <input type="file" id="meme-insert" accept="image/jpeg, image/png, image/jpg">      
+        <input class="form-control btn btn-warning" type="file" id="meme-insert" accept="image/jpeg, image/png, image/jpg">      
         <label for="text-input">Meme text:</label>
-        <input type="text" name="text-input" id="text-input" maxlength="60" placeholder="Insert Meme text here">
+        <input class="form-control" type="text" name="text-input" id="text-input" maxlength="60" placeholder="Write yout text and press Enter">        
+      </section>
+      <section class="styles">
+        <button class="btn" id="fire">Fire</button>
+        <button class="btn" id="water">Water</button>
+        <button class="btn" id="earth">Earth</button>
       </section>
     </section>
   </main>
